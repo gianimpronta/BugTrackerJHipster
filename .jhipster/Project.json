@@ -1,0 +1,14 @@
+{
+  "applications": "*",
+  "changelogDate": "20231208174358",
+  "entityTableName": "project",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Project",
+  "relationships": [],
+  "searchEngine": "no"
+}

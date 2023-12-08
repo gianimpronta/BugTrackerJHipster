@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, dev.impronta.domain.User.class.getName());
             createCache(cm, dev.impronta.domain.Authority.class.getName());
             createCache(cm, dev.impronta.domain.User.class.getName() + ".authorities");
+            createCache(cm, dev.impronta.domain.Project.class.getName());
+            createCache(cm, dev.impronta.domain.Label.class.getName());
+            createCache(cm, dev.impronta.domain.Label.class.getName() + ".tickets");
+            createCache(cm, dev.impronta.domain.Ticket.class.getName());
+            createCache(cm, dev.impronta.domain.Ticket.class.getName() + ".labels");
             // jhipster-needle-ehcache-add-entry
         };
     }
