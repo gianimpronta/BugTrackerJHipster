@@ -1,6 +1,7 @@
 package dev.impronta.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.when;
 
 import dev.impronta.IntegrationTest;
 import dev.impronta.domain.User;
