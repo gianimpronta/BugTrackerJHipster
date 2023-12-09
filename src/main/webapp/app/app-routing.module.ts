@@ -9,6 +9,7 @@ import { errorRoute } from './layouts/error/error.route';
 import HomeComponent from './home/home.component';
 import NavbarComponent from './layouts/navbar/navbar.component';
 import LoginComponent from './login/login.component';
+import MyticketsComponent from './mytickets/mytickets.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,10 @@ import LoginComponent from './login/login.component';
           path: 'login',
           component: LoginComponent,
           title: 'login.title',
+        },
+        {
+          path: 'jhi-mytickets',
+          component: MyticketsComponent,
         },
         {
           path: '',

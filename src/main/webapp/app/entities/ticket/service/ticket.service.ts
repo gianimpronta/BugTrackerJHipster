@@ -102,6 +102,13 @@ export class TicketService {
     return ticketCollection;
   }
 
+  queryMyTickets(): Observable<EntityArrayResponseType> {
+    const options = createRequestOption();
+    return this.http
+      .get<RestTicket[]>(`${this.resourceUrl}/self`, { params: options, observe: 'response' })
+      .pipe(map(res => this.convertResponseArrayFromServer(res)));
+  }
+
   protected convertDateFromClient<T extends ITicket | NewTicket | PartialUpdateTicket>(ticket: T): RestOf<T> {
     return {
       ...ticket,

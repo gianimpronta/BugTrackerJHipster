@@ -1,4 +1,4 @@
-import { NgModule, LOCALE_ID } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import locale from '@angular/common/locales/pt';
@@ -20,6 +20,7 @@ import { fontAwesomeIcons } from './config/font-awesome-icons';
 import MainComponent from './layouts/main/main.component';
 import MainModule from './layouts/main/main.module';
 import { AppPageTitleStrategy } from './app-page-title-strategy';
+import MyticketsComponent from './mytickets/mytickets.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { AppPageTitleStrategy } from './app-page-title-strategy';
     HttpClientModule,
     MainModule,
     TranslationModule,
+    MyticketsComponent,
   ],
   providers: [
     Title,
